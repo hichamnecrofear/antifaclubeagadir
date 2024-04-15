@@ -1,0 +1,593 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #ffffff;
+    color: #030303;
+    padding: 30px 0;
+    text-align: center;
+    padding-top: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    transform: scaleX(0);
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(5, 168, 32);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-menu li a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-menu li a.active::after {
+    transform: scaleX(1);
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #333;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+}
+
+/*---------------------title and logo section----------*/
+.title img{
+    float: right;
+    padding-bottom: 100px;
+    padding-right: 140px;
+    text-align: center;
+}
+
+.title h1{
+    padding-left: 100px;
+    padding-bottom: 0;
+    padding-top: 50px;
+    padding-right: 400px;
+    font-size: 60px;
+    color: #242323;
+}
+
+.title p{
+    line-height: 20px;
+    padding-left: 100px;
+    padding-bottom: -20px;
+    padding-top: 0px;
+    padding-right: 650px;
+    font-size: 23px;
+    word-spacing: 13px;
+    color: #4e4d4d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 30px;
+}
+
+.section1{
+    margin-bottom: 100px;
+}
+
+.hashtag{
+    color: rgb(177, 0, 0);
+}
+
+/*--------------circle img----------------*/
+
+.circular-image {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.circular-image img{
+    height: 150px;
+    border-radius: 50%;
+}
+.circular-image img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+} 
+
+.circular-image {
+    text-align: center;
+    position: relative; /* Positioning context for absolute positioning */
+}
+
+.circular-image a {
+    display: inline-block;
+    position: relative;
+}
+
+.circular-image img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.circular-image h3 {
+    position: absolute;
+    bottom: -20px; /* Adjust the distance from the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Background color of the text */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 5px; /* Border radius */
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Transition for smooth opacity change */
+}
+
+.circular-image a:hover h3 {
+    opacity: 1; /* Show the text on hover */
+}
+
+
+/*---------------------about us section----------------*/
+.section2{
+    background-image: url(aboutus-wallpaper.jpg);
+    padding-top: 4px;
+    width: auto;
+    padding-bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.aboutus{ 
+    text-align: center;
+    color: #fff;
+    padding-bottom: 1px;
+
+}
+
+.aboutus img{
+    justify-content: center;
+    height: 400px;
+}
+
+.vision{
+    text-align: center;
+    padding-top: 50px;
+    color: #fff;
+    float: left;
+    margin-left: -100px;
+    padding-left: 190px;
+    margin-top: -290px;
+}
+
+.vision h4, .mission h4{
+    color: orange;
+}
+
+.mission{
+    text-align: center;
+    color: #fff;
+    margin-bottom: -100px;
+    padding-top: 40px;
+    float: right;
+    padding-right: 20px;
+    margin-top: -290px;
+}
+
+.year{
+    color: orangered;
+    font-size: 40px;
+}
+
+/*-------------road map-------------*/
+
+.roadmap{
+    text-align: center;
+    justify-content: center;
+}
+.split1 img{
+    height: 700px;
+    width: 1200px;
+}
+
+.split2 img{
+    margin-top: -20px;
+    height: 700px;
+    width: 1200px;
+}
+
+.split2 h2{
+    padding-bottom: 15px;
+}
+
+.roadmap h2{
+    text-shadow: 0px 7px 9px #333;
+    color: orangered;
+}
+
+.split1 h1{
+    text-shadow: 1px 7px 9px #4e4d4d;
+    font-size: 40px;
+    padding-top: 20px;
+    
+}
+
+/*---------------------social tracker------------------*/
+
+.facebook-tracker h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 9px rgba(0, 0, 88, 0.959);
+    color: #fff;
+}
+
+.instagram-tracker h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow:1px 1px 9px rgba(235, 16, 206, 0.959);
+    color: #fff;
+}
+
+.youtube-tracker h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 9px red;
+    color: #fff;
+}
+
+.tiktok-tracker h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 9px rgb(0, 0, 0);
+    color: #fff;
+}
+
+.family{
+    color: orangered;
+}
+
+.social-trackers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(90deg, rgb(197, 196, 196), rgb(255, 255, 255) ,rgb(199, 198, 198)); 
+}
+
+.social-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+
+.facebook-tracker, .youtube-tracker, .instagram-tracker, .tiktok-tracker {
+    width: 48%; 
+    text-align: center;
+}
+
+.facebook-tracker img, .youtube-tracker img, .instagram-tracker img, .tiktok-tracker img {
+    margin-bottom: 0;
+}
+
+.social-title h2{
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px #6e6e6e;
+}
+
+.facebook-tracker h2, .youtube-tracker h2{
+    margin-right: -240px;
+    margin-top: -80px;
+}
+
+.facebook-tracker p, .youtube-tracker p{
+    margin-right: -220px;
+}
+
+.tiktok-tracker h2, .instagram-tracker h2{
+    margin-left: -230px;
+    margin-top: -80px;
+}
+
+.tiktok-tracker p, .instagram-tracker p{
+    margin-left: -220px;
+}
+
+
+/*---------------------FAQ section---------------------*/
+.beforfaq{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 40px;
+    text-shadow: 1px 4px 7px rgb(110, 109, 109);
+}
+
+.faqsection{
+    background-size: cover;
+    padding-bottom: 1px;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc8c8;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #000000;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 20px;
+    transition: max-height 0.5s ease-out;
+}
+
+.answer.show {
+    max-height: 100px;
+}
+
+
+/*----------------------footer section----------------------*/
+
+footer {
+    background: linear-gradient(90deg, rgb(68, 105, 76), rgb(179, 179, 179) ,rgb(155, 74, 74));
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*------------------------------------------------------@media for phone---------------------*/
+
+@media screen and (max-width: 600px) {
+
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    /*---------nav----------*/
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px;
+
+    }
+    .hamburger{
+        display: block;
+    }
+
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translate(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translate(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    /*-------logo and title---------*/
+    .section1{
+        margin-bottom: -10px;
+    }
+    .section1 img{
+        height: 20px;
+        width: 10px;
+        float: right;
+        padding-right: 10px;
+    }
+    .section1 h1{
+        font-size: 2px;
+    }
+
+    .section1 p{
+        font-size: 18px;
+    } 
+    /*----------about us---------*/ 
+
+    .vision h4,.vision p{
+        text-align: center;
+        font-size: 8.5px;
+        margin-left: -2px;
+        padding-right: 10px;
+    }
+    .mission h4,.mission p{
+        text-align: center;
+        font-size: 8.5px;
+        padding-right: 45px;
+        margin-top: -10px;
+    }
+
+    /*--------roadmap----------*/
+
+    .split1 img, .split2 img{
+        max-width: 450px;
+        max-height: 400px;
+    }
+
+    /*------social trackers------*/
+
+    .facebook-tracker, .youtube-tracker{
+        margin-left: -40px;
+    }
+    .tiktok-tracker, .instagram-tracker{
+        margin-right: -40px;
+    }
+
+    /*----------faq---------*/
+
+    .faq-item{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .beforfaq{
+        font-size: 20px;
+        text-decoration: underline;
+        text-decoration-color: orangered;
+    }
+}
+/*-------------------------------------------------------@media for ipad---------*/
+
+@media screen and (max-width: 1024px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /*----------logo and title-----------*/
+    .title img{
+        height: 140px;
+        width: 150px;
+        padding-right: 20px;
+        float: right;
+    }
+    .section1 h1{
+        font-size: 25px;
+        margin-right: -400px;
+        margin-left: -50px;
+    }
+    .section1 p{
+        margin-top: -20px;
+        margin-right: -600px;
+        margin-left: -50px;
+    }
+
+    /*------------circular image----------*/
+    .circular-image img{
+        height: 70px;
+        width: 70px;
+        margin-bottom: -40px;
+    }
+
+    /*-------roadmap---------*/
+
+    .split1 img{
+        height: 600px;
+        width: 840px;
+        text-align: center;
+        margin-left: -10px;
+    }
+    .split2 img{
+        height: 600px;
+        width: 840px;
+        text-align: center;
+        margin-left: -10px;
+    }
+    /*--------about us-----------*/
+    .aboutus img{
+        height: 300px;
+        width: 300px;
+    }
+    .section2{
+        padding-bottom: 150px;
+    }
+    .mission{
+        padding-top: 300px;
+        font-size: 11px;
+    }
+    .vision{
+        padding-top: 300px;
+        font-size: 11px;
+    }
+}
